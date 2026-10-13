@@ -1,0 +1,71 @@
+/* src/modules/objects/css/objects.css */
+
+.machine-assignment-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(var(--bs-primary-rgb), 0.12) !important;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+[data-bs-theme="dark"] .machine-assignment-card {
+    background-color: rgba(30, 30, 32, 0.5);
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.machine-assignment-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+    transform: translateY(-2px);
+    border-color: var(--apple-accent-color) !important;
+}
+
+.machine-icon-circle {
+    box-shadow: 0 4px 10px var(--button-glow);
+}
+
+.field-group-box {
+    background-color: transparent;
+    border: none;
+}
+
+[data-bs-theme="dark"] .field-group-box {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.x-small {
+    font-size: 0.65rem;
+}
+
+/* Ensure Tagify looks correct inside the dense card */
+.machine-assignment-card .tagify {
+    padding: 0.2rem 0.4rem;
+}
+
+.machine-assignment-card .form-control-sm {
+    font-size: 0.85rem;
+}
+
+/* Native select drop-downs (e.g. "Дейност", "Статус") inside styled wrappers - readable in both themes */
+.tagify-styled-wrapper select option {
+    color: #1c1c1e;
+    background-color: #ffffff;
+}
+
+[data-bs-theme="dark"] .tagify-styled-wrapper select {
+    color-scheme: dark;
+}
+
+[data-bs-theme="dark"] .tagify-styled-wrapper select option {
+    color: #f2f2f7;
+    background-color: #2c2c2e;
+}
+
+[data-bs-theme="dark"] .tagify-styled-wrapper select option:disabled {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+[data-bs-theme="dark"] .tagify-styled-wrapper select option:checked {
+    background-color: var(--apple-accent-color);
+    color: #ffffff;
+}
